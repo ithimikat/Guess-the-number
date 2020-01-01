@@ -1,4 +1,76 @@
+*{
+    color: wheat;
+}
+
 .container{
     width: 50%;
+    height: 500px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+    border: 3px groove red;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px red;
+    background-image: url("../images/balls.jpg");
+    background-size: 100% 100%;
+}
+
+h1{
+    margin-top: 160px;
+    text-shadow: 2px 2px 2px black;
+}
+
+h2{
+    color: red;
+    margin-top: 0;
+}
+
+h2 > span{
+    color: red;
+}
+
+span{
+    margin-bottom: 3px;
+}
+
+input{
+    height: 25px;
+    width: 100px;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    background-color: #34547A;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+    outline: none;
+    box-shadow: 0 0 8px black;
+}
+
+button:active{
+    background-color: black;
+}
+
+.error-message{
+    color: red;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
 }
